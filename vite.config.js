@@ -1,19 +1,19 @@
+// vite.config.js
 import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vite'
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   plugins: [tailwindcss()],
-  base: 'https://mateusfc-carvalho.github.io/Pasta-Virtual/',
+  base: mode === 'production' ? '/pasta-virtual/' : '/',
   build: {
     outDir: 'dist',
     minify: 'terser',
-    sourcemap: false
+    sourcemap: false,
   },
   server: {
     port: 5173,
-    open: true
-  }
-})
-
+    open: true,
+  },
+}))
 
 
