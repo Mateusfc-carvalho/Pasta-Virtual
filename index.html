@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <link rel="shortcut icon" href="./public/new_logo_Umadesal.jpg" type="image/x-icon">
@@ -16,20 +16,21 @@
 
       <div class="flex justify-center items-baseline">
         <div class="flex flex-col items-baseline">
-          <span class="text2 text-4xl text-cyan-950">PASTA DA</span>
-          <h1 class="text-white text1 tracking-[0.21rem] text-shadow-gray-800 text-2xl me-4 ">
+          <span class="text2 text-2xl text-cyan-950">PASTA DA</span>
+          <h1 class="text1 text-3xl">
             UMADSAL
           </h1>
         </div>
       </div>
 
-      <div class="mt-6">
-        <label for="searchBar" class="text-[0.70rem] font-semibold m-4 text3">PESQUISE AQUI OS HINOS</label>
+      <div class="mt-8">
+        <label for="searchBar" class="text-sm text-gray-50 font-medium m-4 text3">PESQUISE AQUI OS HINOS</label>
         <div class="flex justify-center border rounded-4xl bg-white border-white">
           <button id="search" class="p-2 cursor-pointer font-medium rounded-md">
-            <img src="./public/img/icons/search.svg" class="w-8 h-8" alt="icone de pesquisa">
+            <img src="./img/icons/search.svg" class="w-8 h-8" alt="icone de pesquisa">
           </button>
-          <input type="text" id="searchBar" class="w-full p-2 bg-white text-black outline-none rounded-4xl"/>
+          <input type="text" id="searchBar" placeholder="nome da música"
+           class="w-full p-2 bg-white text-black outline-none rounded-4xl"/>
         </div>
       </div>
     </header>
@@ -41,7 +42,7 @@
     >
       <ul class="w-full h-full py-24 gap-8 mx-2 flex flex-col items-center ">
         <li class="border border-cyan-400 p-2 rounded-lg w-[80%] text-center">
-          <a href="#" class="text-3xl text3 block">Adicionar Hino</a>
+          <a href="addMusic" class="text-3xl text3 block">Adicionar Hino</a>
         </li>
         <li class="border border-cyan-400 p-2 rounded-lg w-[80%] text-center">
           <a href="#" class="text-3xl text3 block">Categoria</a>
@@ -58,7 +59,7 @@
     <!-- HINOS -->
 
 
-    <script type="module" src="./src/main.js"></script>
+    <script type="module" src="./src/main.js" defer></script>
   </body>
 </html>
 

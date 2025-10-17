@@ -21,16 +21,4 @@
   color: #101828;
   transition: all 0.3s;
 }
-/*fonts config*/
-.text1 {
-  font-family: var(--font1);
-  font-variant: var(--text-default);
-}
-.text2 {
-  font-family: var(--font2);
-  font-weight: 600;
-}
-.text3 {
-  font-family: var(--font3);
-  font-variant: var(--text-default);
-}
+

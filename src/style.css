@@ -1,5 +1,4 @@
 /*FONTS*/
-@import url('https://fonts.cdnfonts.com/css/climate-crisis');
 @import url('https://fonts.cdnfonts.com/css/open-sauce-one');
 @import url('https://fonts.cdnfonts.com/css/glacial-indifference');
 
@@ -16,7 +15,6 @@
   --text-default:#F3F4F4;
   --constrast-blue: #005d67;
   /*fonts*/
-  --font1: 'Climate Crisis', sans-serif;
   --font2: 'Open Sauce One', sans-serif;
   --font3: 'Glacial Indifference', sans-serif;
 }
@@ -28,5 +26,23 @@ html{
 body {
   width: 100%;
   min-height: 100dvh;
+  background-color: var(--primary);
 }
 
+/*fonts config*/
+.text1 {
+  font-family: fantasy;
+  color: var(--text-default);
+  font-display: swap;
+  letter-spacing: 0.35rem;
+}
+.text2 {
+  font-family: var(--font2);
+  font-weight: 600;
+  font-display: swap;
+}
+.text3 {
+  font-family: var(--font3);
+  color: var(--text-default);
+  font-display: swap;
+}
