@@ -1,18 +1,137 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="https://mateusfc-carvalho.github.io/Pasta-Virtual/assets/new_logo_Umadesal-B5-Utcys.jpg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pasta-virtual</title>
-    <script type="module" crossorigin src="https://mateusfc-carvalho.github.io/Pasta-Virtual/assets/index-x072sXXB.js"></script>
-    <link rel="stylesheet" crossorigin href="https://mateusfc-carvalho.github.io/Pasta-Virtual/assets/index-Deme3L48.css">
+    <script type="module" crossorigin src="https://mateusfc-carvalho.github.io/Pasta-Virtual/assets/index-IB6R_s0S.js"></script>
+    <link rel="stylesheet" crossorigin href="https://mateusfc-carvalho.github.io/Pasta-Virtual/assets/index-CFYTeIuf.css">
   </head>
-  <body>
-    <header>
-      <h1 class="text-5xl text-center text-white">UMADESAL</h1>
+  <body class="bg-white t-light">
+    <header class="flex flex-col">
+      <div class="flex justify-between items-baseline">
+        <h1 class="text-white font-mono font-bold text-shadow-gray-800 text-2xl me-4  text-shadow-2xs">UMADSAL</h1>
+        <button id="btntoggler" class="font-mono text-2xl font-semibold text-blue-50 p-2
+         rounded-[7px] cursor-pointer z-50">
+          ☰
+        </button>
+      </div>
+
+      <div class="flex justify-center border rounded-md bg-blue-200 mt-8 border-white">
+        <input type="text" class="w-full p-2 text-black outline-none
+         rounded-md" placeholder="Digite nome da Música">
+        <button id="search" class="p-2 cursor-pointer text-2 text-white bg-sky-600 font-medium rounded-md">
+          Procurar
+        </button>
+      </div>
+
     </header>
 
+     <nav id="list"
+      class="nav-hidden w-full fixed top-0 left-0 mt-26 flex z-30 flex-col min-h-screen
+      bg-cyan-950"
+      aria-hidden="false"
+      role="navigation"
+    >
+      <ul class="w-full h-full py-24 gap-8 mx-2 flex flex-col items-center ">
+        <li class="border border-cyan-400 p-2 rounded-lg w-[80%] text-center">
+          <a href="#" class="text-3xl font-mono font-medium text-white block">Adicionar Hino</a>
+        </li>
+        <li class="border border-cyan-400 p-2 rounded-lg w-[80%] text-center">
+          <a href="#" class="text-3xl font-mono font-medium text-white block">Categoria</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- toggler theme -->
+     <button id="themeToggle" class="btnTheme z-50">
+        <img src="data:image/svg+xml,%3csvg%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='SVGRepo_bgCarrier'%20stroke-width='0'%3e%3c/g%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%20id='SVGRepo_iconCarrier'%3e%3cpath%20d='M12%2022C17.5228%2022%2022%2017.5228%2022%2012C22%2011.5373%2021.3065%2011.4608%2021.0672%2011.8568C19.9289%2013.7406%2017.8615%2015%2015.5%2015C11.9101%2015%209%2012.0899%209%208.5C9%206.13845%2010.2594%204.07105%2012.1432%202.93276C12.5392%202.69347%2012.4627%202%2012%202C6.47715%202%202%206.47715%202%2012C2%2017.5228%206.47715%2022%2012%2022Z'%20fill='%230498b8'%3e%3c/path%3e%3c/g%3e%3c/svg%3e" id="icon-theme" class="w-10 h-10 p-2 bg-gray-800 rounded-full"
+        alt="icone de sol">
+     </button>
+    <!-- HINOS -->
 
 
   </body>
 </html>
+
+<!-- Formatação de Hino
+   <section class="w-full h-screen mt-36">
+      <div class="p-6 flex flex-col bg-white t- ">
+          <h2 class="text-orange-500 text-2xl font-bold">Efésios 6</h2>
+          <h4 class="text-green-500 text-xl font-medium mb-4">Anderson Freire</h4>
+          <p class="text-black text-md font-medium font-serif text-start my-2 t-  whitespace-pre-line">
+            Tua palavra trouxe salvação, o discernimento
+            Imunidade para o meu coração
+            Ela me leva a outra dimensão
+            Pra combater o mal, nas regiões celestiais
+            Por isso, lutei até transpirar
+            Na guerra sem carne, sem sangue a derramar
+            Guardei os meus pés, o meu coração
+
+            Com a mente protegida estou
+            Segurando a espada na mão
+            Minha fé depositei no Senhor
+            Na batalha, eu ganhei proteção
+            Com a mente protegida estou
+            Segurando a espada na mão
+            Meu currículo é de campeão
+
+            Rei dos reis, na Palavra estou de pé
+            Inabalável é minha fé
+            No dia mau, Senhor, Te adorei
+            Te busquei quando li Efésios 6
+            Tua armadura usei
+            E com muita precisão
+            Me defendi e ataquei!
+
+            Com a mente protegida estou
+            Segurando a espada na mão
+            Minha fé depositei no Senhor
+            Na batalha, eu ganhei proteção
+            Com a mente protegida estou
+            Segurando a espada na mão
+            Meu currículo é de campeão
+
+            Rei dos reis, na Palavra estou de pé
+            Inabalável é minha fé
+            No dia mau, Senhor, Te adorei
+            Te busquei quando li Efésios 6
+            Tua armadura usei
+            E com muita precisão
+            Me defendi e ataquei
+
+            Igreja! (Glória a Deus!)
+            De quem é a vitória? (É do povo de Deus!)
+            Igreja! (Glória a Deus!)
+            De quem é a vitória? (É do povo de Deus!)
+
+            Eu tenho o capacete da salvação
+            (Eu tenho o capacete da salvação)
+            A couraça da justiça no meu coração
+            (A couraça da justiça no meu coração)
+            Guardei os pés (na preparação)
+            Do evangelho (eu já tenho em minhas mãos)
+            Espada, escudo, estou pronto pra lutar
+            Defesa, ataque, não posso vacilar
+            A porta do inferno nunca prevalecerá
+            Contra a igreja que não para de orar
+
+            Rei dos reis, na Palavra estou de pé
+            Inabalável é minha fé
+            No dia mau, Senhor, Te adorei
+            Te busquei quando li Efésios 6
+            Tua armadura usei
+            E com muita precisão
+            Me defendi
+
+            Rei dos reis, na Palavra estou de pé
+            Inabalável é minha fé
+            No dia mau, Senhor, Te adorei
+            Te busquei quando li Efésios 6
+            Tua armadura usei
+            E com muita precisão
+            Me defendi e ataquei
+          </p>
+      </div>
+    </section> -->
