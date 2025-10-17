@@ -4,12 +4,15 @@
 .btnTheme {
   padding: 0.40rem;
   position: fixed;
-  bottom: 0;
+  bottom: 10px;
   right: 0;
 }
-
+.back-blue {
+  background-color: var(--constrast-blue);
+}
+/*theme config*/
 .t-dark {
-  background-color: #101828;
+  background-color: var(--blue-darkest);
   color: var(--text-default);
   transition: all 0.3s;
 }
@@ -17,4 +20,17 @@
   background-color: var(--text-default);
   color: #101828;
   transition: all 0.3s;
+}
+/*fonts config*/
+.text1 {
+  font-family: var(--font1);
+  font-variant: var(--text-default);
+}
+.text2 {
+  font-family: var(--font2);
+  font-weight: 600;
+}
+.text3 {
+  font-family: var(--font3);
+  font-variant: var(--text-default);
 }

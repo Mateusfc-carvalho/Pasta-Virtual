@@ -1,3 +1,8 @@
+/*FONTS*/
+@import url('https://fonts.cdnfonts.com/css/climate-crisis');
+@import url('https://fonts.cdnfonts.com/css/open-sauce-one');
+@import url('https://fonts.cdnfonts.com/css/glacial-indifference');
+
 /*CSS*/
 @import './assets/css/header.css';
 @import './assets/css/utils.css';
@@ -5,11 +10,15 @@
 @import "tailwindcss";
 
 :root {
-  --blue-ligth: #00b4d8;
-  --primary: #0498b8;
-  --blue-darkest: #023e8a;
-  --blue-darkness: #03045e;
-  --text-default:#f1f1f1f1;
+  --primary: #46909C;
+  --blue-darkest: #053D49;
+  --azure: #81C3CD;
+  --text-default:#F3F4F4;
+  --constrast-blue: #005d67;
+  /*fonts*/
+  --font1: 'Climate Crisis', sans-serif;
+  --font2: 'Open Sauce One', sans-serif;
+  --font3: 'Glacial Indifference', sans-serif;
 }
 
 html{
