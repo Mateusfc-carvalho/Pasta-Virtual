@@ -1,3 +1,7 @@
+/*CSS*/
+@import './assets/css/header.css';
+@import './assets/css/utils.css';
+/*Tailwind*/
 @import "tailwindcss";
 
 :root {
@@ -5,9 +9,15 @@
   --primary: #0498b8;
   --blue-darkest: #023e8a;
   --blue-darkness: #03045e;
-  --text-default:#f1f1f1f1
+  --text-default:#f1f1f1f1;
 }
 
-.btn-primary {
-  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+html{
+  scroll-behavior: smooth;
 }
+
+body {
+  width: 100%;
+  min-height: 100dvh;
+}
+

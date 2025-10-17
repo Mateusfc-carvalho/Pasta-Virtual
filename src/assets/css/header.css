@@ -1,0 +1,19 @@
+header {
+  width: 100%;
+  background: var(--primary);
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  padding:  0.8rem;
+}
+
+.nav-hidden {
+  transform: translatex(200px);
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.2s;
+}
+.nav-open {
+  transform: translatex(0);
+  opacity: 1;
+  transition: transform 0.3s, opacity 0.2s;
+}

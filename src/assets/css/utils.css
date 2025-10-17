@@ -1,0 +1,20 @@
+.background-gradient {
+  background:  linear-gradient(to bottom,var(--blue-darkness),var(--primary),var(--blue-darkest));
+}
+.btnTheme {
+  padding: 0.40rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.t-dark {
+  background-color: #101828;
+  color: var(--text-default);
+  transition: all 0.3s;
+}
+.t-light {
+  background-color: var(--text-default);
+  color: #101828;
+  transition: all 0.3s;
+}
