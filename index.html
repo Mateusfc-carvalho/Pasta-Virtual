@@ -2,53 +2,60 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="https://mateusfc-carvalho.github.io/Pasta-Virtual/assets/new_logo_Umadesal-B5-Utcys.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/pasta-virtual/assets/new_logo_Umadesal-B5-Utcys.jpg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pasta-virtual</title>
-    <script type="module" crossorigin src="https://mateusfc-carvalho.github.io/Pasta-Virtual/assets/index-IB6R_s0S.js"></script>
-    <link rel="stylesheet" crossorigin href="https://mateusfc-carvalho.github.io/Pasta-Virtual/assets/index-CFYTeIuf.css">
+    <script type="module" crossorigin src="/pasta-virtual/assets/index-BasaSVyQ.js"></script>
+    <link rel="stylesheet" crossorigin href="/pasta-virtual/assets/index-DgQckEQL.css">
   </head>
   <body class="bg-white t-light">
     <header class="flex flex-col">
-      <div class="flex justify-between items-baseline">
-        <h1 class="text-white font-mono font-bold text-shadow-gray-800 text-2xl me-4  text-shadow-2xs">UMADSAL</h1>
-        <button id="btntoggler" class="font-mono text-2xl font-semibold text-blue-50 p-2
+      <button id="btntoggler" class="absolute right-0 top-0 text2 text-2xl font-semibold text-blue-50 p-2
          rounded-[7px] cursor-pointer z-50">
           ☰
-        </button>
+      </button>
+
+      <div class="flex justify-center items-baseline">
+        <div class="flex flex-col items-baseline">
+          <span class="text2 text-4xl text-cyan-950">PASTA DA</span>
+          <h1 class="text-white text1 tracking-[0.21rem] text-shadow-gray-800 text-2xl me-4 ">
+            UMADSAL
+          </h1>
+        </div>
       </div>
 
-      <div class="flex justify-center border rounded-md bg-blue-200 mt-8 border-white">
-        <input type="text" class="w-full p-2 text-black outline-none
-         rounded-md" placeholder="Digite nome da Música">
-        <button id="search" class="p-2 cursor-pointer text-2 text-white bg-sky-600 font-medium rounded-md">
-          Procurar
-        </button>
+      <div class="mt-6">
+        <label for="searchBar" class="text-[0.70rem] font-semibold m-4 text3">PESQUISE AQUI OS HINOS</label>
+        <div class="flex justify-center border rounded-4xl bg-white border-white">
+          <button id="search" class="p-2 cursor-pointer font-medium rounded-md">
+            <img src="data:image/svg+xml,%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Transformed%20by:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='800px'%20height='800px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='SVGRepo_bgCarrier'%20stroke-width='0'/%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cg%20id='SVGRepo_iconCarrier'%3e%3cpath%20d='M15%2015L21%2021'%20stroke='%23707070'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M17%2010C17%2013.866%2013.866%2017%2010%2017C6.13401%2017%203%2013.866%203%2010C3%206.13401%206.13401%203%2010%203C13.866%203%2017%206.13401%2017%2010Z'%20stroke='%23707070'%20stroke-width='2'/%3e%3c/g%3e%3c/svg%3e" class="w-8 h-8" alt="icone de pesquisa">
+          </button>
+          <input type="text" id="searchBar" class="w-full p-2 bg-white text-black outline-none rounded-4xl"/>
+        </div>
       </div>
-
     </header>
 
      <nav id="list"
-      class="nav-hidden w-full fixed top-0 left-0 mt-26 flex z-30 flex-col min-h-screen
-      bg-cyan-950"
+      class="nav-hidden w-full fixed top-0 left-0 mt-48 flex z-30 flex-col min-h-screen back-blue"
       aria-hidden="false"
       role="navigation"
     >
       <ul class="w-full h-full py-24 gap-8 mx-2 flex flex-col items-center ">
         <li class="border border-cyan-400 p-2 rounded-lg w-[80%] text-center">
-          <a href="#" class="text-3xl font-mono font-medium text-white block">Adicionar Hino</a>
+          <a href="#" class="text-3xl text3 block">Adicionar Hino</a>
         </li>
         <li class="border border-cyan-400 p-2 rounded-lg w-[80%] text-center">
-          <a href="#" class="text-3xl font-mono font-medium text-white block">Categoria</a>
+          <a href="#" class="text-3xl text3 block">Categoria</a>
         </li>
       </ul>
     </nav>
 
     <!-- toggler theme -->
      <button id="themeToggle" class="btnTheme z-50">
-        <img src="data:image/svg+xml,%3csvg%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='SVGRepo_bgCarrier'%20stroke-width='0'%3e%3c/g%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%20id='SVGRepo_iconCarrier'%3e%3cpath%20d='M12%2022C17.5228%2022%2022%2017.5228%2022%2012C22%2011.5373%2021.3065%2011.4608%2021.0672%2011.8568C19.9289%2013.7406%2017.8615%2015%2015.5%2015C11.9101%2015%209%2012.0899%209%208.5C9%206.13845%2010.2594%204.07105%2012.1432%202.93276C12.5392%202.69347%2012.4627%202%2012%202C6.47715%202%202%206.47715%202%2012C2%2017.5228%206.47715%2022%2012%2022Z'%20fill='%230498b8'%3e%3c/path%3e%3c/g%3e%3c/svg%3e" id="icon-theme" class="w-10 h-10 p-2 bg-gray-800 rounded-full"
-        alt="icone de sol">
+        <img src="./img/icons/moon.svg" id="icon-theme" class="w-10 h-10 p-2 bg-gray-800 rounded-full"
+        alt="icone de lua">
      </button>
+
     <!-- HINOS -->
 
 
@@ -57,10 +64,10 @@
 
 <!-- Formatação de Hino
    <section class="w-full h-screen mt-36">
-      <div class="p-6 flex flex-col bg-white t- ">
+      <div class="p-6 flex flex-col bg-white">
           <h2 class="text-orange-500 text-2xl font-bold">Efésios 6</h2>
           <h4 class="text-green-500 text-xl font-medium mb-4">Anderson Freire</h4>
-          <p class="text-black text-md font-medium font-serif text-start my-2 t-  whitespace-pre-line">
+          <p class="text-black text-md font-medium font-serif text-start my-2 whitespace-pre-line">
             Tua palavra trouxe salvação, o discernimento
             Imunidade para o meu coração
             Ela me leva a outra dimensão
