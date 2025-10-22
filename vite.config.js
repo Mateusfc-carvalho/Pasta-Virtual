@@ -1,7 +1,8 @@
 // vite.config.js
-import tailwindcss from '@tailwindcss/vite';
-import { defineConfig } from 'vite';
-import viteCompression from 'vite-plugin-compression';
+import tailwindcss from '@tailwindcss/vite'
+import { resolve } from 'node:path'
+import { defineConfig } from 'vite'
+import viteCompression from 'vite-plugin-compression'
 
 export default defineConfig(({ mode }) => ({
   plugins: [
@@ -24,11 +25,15 @@ export default defineConfig(({ mode }) => ({
     outDir: 'dist',
     minify: 'terser',
     sourcemap: false,
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        addMusic: resolve(__dirname, 'addMusic.html'),
+      },
+    },
   },
   server: {
     port: 5173,
     open: true,
   },
-}));
-
-
+}))

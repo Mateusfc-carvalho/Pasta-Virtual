@@ -5,11 +5,40 @@
   <link rel="shortcut icon" href="./public/new_logo_Umadesal.jpg" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./src/style.css">
-  <title>Adicionar novo hino</title>
+  <title>Adicionar Hino</title>
 </head>
 <body>
+  <h1 class="text3 text-2xl font-semibold italic text-gray-50 text-center m-8">
+    ADICIONAR NOVO HINO
+  </h1>
 
+  <section class="flex flex-col items-center my-16 w-[90%] p-8 border border-white mx-auto rounded-2xl">
+    <div class=" container_msg">
+      <label for="title" class="text3">Digite o nome da Música</label>
+      <input type="text" id="title" placeholder="Além do rio azul"
+      class="w-full p-2 bg-white text-black outline-none rounded-2xl mt-2" required/>
+    </div>
+    <div class="mt-6 container_msg">
+      <label for="singer" class="text3">Digite o nome do Cantor</label>
+      <input type="text" id="singer" placeholder="Voz da Verdade"
+      class="w-full p-2 bg-white text-black outline-none rounded-2xl mt-2" required/>
+    </div>
+    <div class="mt-6 container_msg">
+      <label for="songNumber" class="text3">Digite o número do Hino</label>
+      <input type="number" id="songNumber" placeholder="01"
+      class="w-full p-2 bg-white text-black outline-none rounded-2xl mt-2" required/>
+    </div>
+    <div class="mt-6 container_msg">
+      <label for="title" class="text3">Digite a Letra do Hino</label>
+      <textarea name="letra" id="letterFormated" required
+        class="w-full h-72 p-2 bg-white text-black outline-none rounded-2xl mt-2" ></textarea>
+    </div>
 
+    <button id="addMusic" class="text3 text-lg w-[95%] p-4 bg-black mt-6 border border-white  rounded-2xl">
+      Adicionar
+    </button>
+  </section>
+  
   <script type="module" src="./src/addMusic.js"></script>
 </body>
 </html>

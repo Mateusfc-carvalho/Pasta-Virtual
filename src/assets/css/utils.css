@@ -22,3 +22,19 @@
   transition: all 0.3s;
 }
 
+.errorMessage {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,20%);
+  margin: 0.23rem;
+  border-radius: 0.45rem;
+  background-color: var(--azure);
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  font-family: var(--font3);
+  font-size: 1rem;
+  font-weight: bolder;
+  text-align: center;
+  padding: 0.33rem;
+}
